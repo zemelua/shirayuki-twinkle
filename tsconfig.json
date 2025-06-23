@@ -9,9 +9,10 @@
 		"esModuleInterop": true,
 		"skipLibCheck": true,
 		"strict": true,
+		"baseUrl": ".",
 		"paths": {
 			"~/*": [
-				"./src/*"
+				"src/*"
 			]
 		},
 	},
