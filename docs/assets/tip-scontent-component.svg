@@ -2,7 +2,7 @@
 	xmlns="http://www.w3.org/2000/svg">
 	<style>
 		div.container {
-			font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+			font-family: "Noto Sans", -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 			display: flex;
 			align-items: center;
 			justify-content: center;
