@@ -30,7 +30,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 								<H>Hello, Twinkle ✨️ This is the level 6 heading.</H>
 
 								<SectionSContent>
-									<H>Hello, Twinkle ✨️ This is the level 7 heading adn the tag is <code>h6</code></H>
+									<H>Hello, Twinkle ✨️ This is the level 7 heading and the tag is <code>h6</code></H>
 								</SectionSContent>
 							</SectionSContent>
 						</SectionSContent>
