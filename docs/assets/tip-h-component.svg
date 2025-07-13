@@ -1,7 +1,12 @@
 <svg height="28" viewBox="0 0 56 28"
 	xmlns="http://www.w3.org/2000/svg">
-	<style>
+
+	<foreignObject x="0" y="0" width="100%" height="100%">
+		<style>
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+		
 		div.container {
+			font-family: "Noto Sans", -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -23,9 +28,7 @@
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 		}
-	</style>
-
-	<foreignObject x="0" y="0" width="100%" height="100%">
+		</style>
 		<div xmlns="http://www.w3.org/1999/xhtml">
 			<div class="container">
 				<span>&lt;H /&gt;</span>
