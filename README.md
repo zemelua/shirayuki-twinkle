@@ -1,18 +1,18 @@
 # Shirayuki Twinkle
 
-<img src="docs/assets/tip-shirayuki-twinkle.svg" /> は Document Outline Algorithm や、h 要素のような考え方に触発された、構造化されたセクションと見出しを実現するための React ライブラリです。
+<img src="docs/assets/tip-shirayuki-twinkle.svg" alt="Shirayuki Twinkle" /> is a React library inspired by the Document Outline Algorithm and the concept of heading elements like `<h1>` and `<h3>`. It enables structured sections and headings.
 
-`<h1>` や `<h3>` のようなレベルつきの見出しを配置するかわりに、セクショニング構造をもとにレベルを自動的に計算する見出し要素を使用することができます。
+Instead of manually placing heading levels like `<h1>` or `<h3>`, you can use heading components that automatically calculate their levels based on the surrounding sectioning structure.
 
-これにより、見出しレベルを意識せず柔軟で構造化された文書を作ることができます。さまざまな位置に配置される可能性のあるカードコンポーネントや、Markdown からパースされた文書の埋め込みコンポーネントなどを使用する際に特に有用です。
+This allows you to create flexible, structured documents without having to think about heading levels. It's especially useful when working with components like cards that may appear in various positions, or when embedding documents parsed from Markdown.
 
-## 使い方
+## Usage
 
-コンポーネント <img src="docs/assets/tip-h-component.svg" /> は見出し、各種 <img src="docs/assets/tip-scontent-component.svg" /> はセクショニング・コンテンツ、各種 <img src="docs/assets/tip-sroot-component.svg" /> はセクショニング・ルートを表します。
+The component <img src="docs/assets/tip-h-component.svg" alt="Heading component icon" /> represents a heading, while <img src="docs/assets/tip-scontent-component.svg" alt="Sectioning content component icon" /> represents sectioning content components, and <img src="docs/assets/tip-sroot-component.svg" alt="Sectioning root component icon" /> represents sectioning root components.
 
-<img src="docs/assets/tip-scontent-component.svg" /> セクショニング・コンテンツは、セクショニング・コンテンツに入れ子になるごとに一つ階層レベルを上げます。セクショニング・コンテンツの子孫である <img src="docs/assets/tip-h-component.svg" /> 見出しは、最も近くの親であるセクショニング・コンテンツの階層レベルを反映します。
+Each time you nest a <img src="docs/assets/tip-scontent-component.svg" alt="Sectioning content component icon" /> sectioning content component inside another, the hierarchy level increases by one. Any descendant <img src="docs/assets/tip-h-component.svg" alt="Heading component icon" /> heading will reflect the hierarchy level of its nearest parent sectioning content.
 
-セクショニング・コンテンツは `<SectionSContent>` 、 `<ArticleSContent>` などの種類があります。異なる種類のセクショニング・コンテンツをネストしても、階層はカウントされます。
+There are different types of sectioning content components, such as `<SectionSContent>` and `<ArticleSContent>`. Nesting different types of sectioning content still increases the hierarchy level.
 
 ```tsx
 <ArticleSContent>
@@ -24,7 +24,7 @@
 </ArticleSContent>
 ```
 
-これはこのような HTML になります。
+This will be rendered into the following HTML:
 
 ```html
 <article>
@@ -36,7 +36,7 @@
 </article>
 ```
 
-<img src="docs/assets/tip-sroot-component.svg" /> セクショニング・ルートはセクショニング・コンテンツと同様に使用できますが、そこでアウトラインレベルをリセットする効果を持ちます。
+<img src="docs/assets/tip-sroot-component.svg" alt="Sectioning root component icon" /> Sectioning root components can be used similarly to sectioning content, but they reset the outline level.
 
 ```tsx
 <ArticleSContent>
@@ -52,7 +52,7 @@
 </ArticleSContent>
 ```
 
-これはこのような HTML になります。
+This will be rendered into the following HTML:
 
 ```html
 <article>
