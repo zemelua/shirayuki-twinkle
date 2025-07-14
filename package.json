@@ -1,4 +1,37 @@
 {
+	"name": "shirayuki-twinkle",
+	"version": "1.0.0",
+	"description": "Structured sectioning and automatic heading levels for React. Build flexible, semantically rich documents without manually assigning heading levels.",
+	"keywords": [
+		"react",
+		"headings",
+		"document-outline",
+		"outline",
+		"semantic-html",
+		"sectioning",
+		"structured-content",
+		"accessibility",
+		"a11y",
+		"heading-level",
+		"auto-heading",
+		"jsx",
+		"react-library",
+		"web-accessibility",
+		"markdown"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/zemelua/shirayuki-twinkle"
+	},
+	"license": "MIT",
+	"author": "zemelua",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist",
+		"README.md"
+	],
 	"scripts": {
 		"build": "tsup",
 		"dev": "tsup --watch",
